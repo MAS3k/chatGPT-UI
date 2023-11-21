@@ -1,0 +1,99 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.containerStyle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.paperStyle {
+    padding: 40px;
+    margin: 30px;
+    width: 400px;
+    height: 500px;
+    border-radius: 18px;
+    background-color: #76b1e3;
+
+}
+
+.additionalContentStyle {
+    color: #76b1e3;
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
+    position: top;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+    font-size: larger;
+    padding-right: 20px;
+
+
+}
+
+@keyframes mymove {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 51%;
+    }
+}
+
+
+.additionalContentStyle:hover {
+    color: whitesmoke;
+
+}
+
+.loginheading {
+    color: whitesmoke;
+    transition: color 1.5s ease-in-out;
+
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.loginheading:hover {
+    color: #3F00FF;
+}
+
+
+.loginheading {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .loginheading h1 {
+        font-size: 24px;
+    }
+
+    .additionalContentStyle {
+        display: none;
+    }
+
+    .paperStyle {
+        width: 80%;
+        margin: 10px;
+        padding: 20px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .paperStyle {
+        width: 90%;
+        margin: 5px;
+        padding: 15px;
+        height: auto;
+    }
+}
